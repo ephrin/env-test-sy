@@ -1,0 +1,24 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+
+    mysql_host: 127.0.0.1
+    mysql_port: ~
+    mysql_db: symfony
+    mysql_user: root
+    mysql_password: root
+
+    pgsql_host: 127.0.0.1
+    pgsql_port: ~
+    pgsql_db: symfony
+    pgsql_user: root
+    pgsql_password: root
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret: ThisTokenIsNotSoSecretChangeIt
