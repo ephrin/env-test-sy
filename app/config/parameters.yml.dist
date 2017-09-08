@@ -1,24 +1,27 @@
-# This file is a "template" of what your parameters.yml file should look like
-# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
-# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+# This file is auto-generated during the composer install
 parameters:
-
-    mysql_host: 127.0.0.1
-    mysql_port: ~
-    mysql_db: symfony
-    mysql_user: root
-    mysql_password: root
-
-    pgsql_host: 127.0.0.1
-    pgsql_port: ~
-    pgsql_db: symfony
-    pgsql_user: root
-    pgsql_password: root
-
     mailer_transport: smtp
     mailer_host: 127.0.0.1
-    mailer_user: ~
-    mailer_password: ~
+    mailer_user: null
+    mailer_password: null
+    secret: ba1e6650e6aa74582ae05e09fb148874e393dae9
 
-    # A secret key that's used to generate certain security-related tokens
-    secret: ThisTokenIsNotSoSecretChangeIt
+#    mysql_host: "oro-cloud-development:t1-1-mysql"
+#    mysql_host: 104.154.192.6
+    mysql_host: /cloudsql/oro-cloud-development:us-central1:t1-1-mysql
+    mysql_port: null
+    mysql_db: test
+    mysql_user: root
+    mysql_password: root
+    mysql_ca_file: /home/ephrin/ws/oro/env-test-sy/certs/mysql/server-ca.pem
+    mysql_key_file: /home/ephrin/ws/oro/env-test-sy/certs/mysql/client-key.pem
+    mysql_cert_file: /home/ephrin/ws/oro/env-test-sy/certs/mysql/client-cert.pem
+
+    pgsql_host: 35.188.199.129
+    pgsql_port: null
+    pgsql_db: test
+    pgsql_user: postgres
+    pgsql_password: root
+    pgsql_ca_file: /home/ephrin/ws/oro/env-test-sy/certs/pgsql/server-ca.pem
+    pgsql_key_file: /home/ephrin/ws/oro/env-test-sy/certs/pgsql/client-key.pem
+    pgsql_cert_file: /home/ephrin/ws/oro/env-test-sy/certs/pgsql/client-cert.pem
